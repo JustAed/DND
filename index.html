@@ -1,87 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
     <title>D&D Campaign Wiki Hub</title>
-    <link rel="stylesheet" href="styles/wiki.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 </head>
-<body>
 
-<header>
-    <h1>📜 D&D Campaign Wiki</h1>
-    <p>
-        A central hub for all ongoing, completed, and future Dungeons & Dragons campaigns.
-        Each campaign links to its own wiki with lore, characters, locations, and session logs.
-    </p>
-</header>
+<body class="bg-dark text-light">
 
-<main>
-    <section>
-        <h2 class="section-title">Active Campaigns</h2>
-        <div class="campaign-grid">
-            <div class="campaign-card">
-                <h3>The Ashen Crown</h3>
-                <div class="campaign-meta">DM: You • Level 7–12 • Ongoing</div>
-                <p>
-                    A war-torn continent struggles beneath the return of an ancient fire god and
-                    the fractured kingdoms that seek to control its power.
-                </p>
-                <a href="campaigns/ashen-crown/index.html">Enter Campaign →</a>
+<div class="d-flex min-vh-100">
+
+    <div id="navbar"></div>
+    <div class="container py-5 flex-grow-1 p-4">
+
+        <h1 class="text-center text-warning mb-3">D&D Campaign Wiki</h1>
+        <p class="text-center text-secondary mb-5">
+            A central hub for all ongoing, completed, and future Dungeons & Dragons campaigns.
+        </p>
+
+        <!-- ACTIVE CAMPAIGNS -->
+        <h2 class="border-bottom pb-2 mb-3 text-warning">Active Campaigns</h2>
+        <div class="row g-3 mb-4">
+
+            <div class="col-md-6">
+                <div class="card bg-black border-warning text-light h-100">
+                    <div class="card-body">
+                        <h5 class="text-warning">Campaign 1</h5>
+                        <p>War-torn continent struggles beneath the return of an ancient fire god and the fractured kingdoms seeking its power.</p>
+                        <a href="/campaigns/campaign-1" class="text-warning">Enter Campaign →</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="campaign-card">
-                <h3>Echoes of the Deep</h3>
-                <div class="campaign-meta">DM: You • Level 3–8 • Ongoing</div>
-                <p>
-                    Seafaring intrigue, eldritch secrets, and lost civilizations buried beneath
-                    the waves.
-                </p>
-                <a href="campaigns/echoes-deep/index.html">Enter Campaign →</a>
+<!--            <div class="col-md-6">-->
+<!--                <div class="card bg-black border-warning text-light h-100">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="text-warning">Echoes of the Deep</h5>-->
+<!--                        <p>Seafaring intrigue, eldritch secrets, and lost civilizations buried beneath the waves.</p>-->
+<!--                        <a href="campaigns/echoes-deep/index.html" class="text-warning">Enter Campaign →</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+        </div>
+
+        <!-- COMPLETED CAMPAIGNS -->
+        <h2 class="border-bottom pb-2 mb-3 text-warning">Completed Campaigns</h2>
+        <div class="row g-3 mb-4">
+
+<!--            <div class="col-md-6">-->
+<!--                <div class="card bg-black border-warning text-light h-100">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="text-warning">Curse of Blackspire</h5>-->
+<!--                        <p>Gothic horror tale of curses, betrayal, and the price of forbidden magic.</p>-->
+<!--                        <a href="campaigns/blackspire/index.html" class="text-warning">View Archive →</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+        </div>
+
+        <!-- QUICK LINKS -->
+        <h2 class="border-bottom pb-2 mb-3 text-warning">Quick Wiki Links</h2>
+        <div class="row g-3 mb-4">
+<!--            <div class="col-md-3">-->
+<!--                <div class="card bg-black border-warning text-light h-100 p-3">-->
+<!--                    <h6 class="text-warning">World Lore</h6>-->
+<!--                    <p class="text-secondary small">Gods, planes, history</p>-->
+<!--                    <a href="shared/world-lore.html" class="text-warning">View →</a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="col-md-3">-->
+<!--                <div class="card bg-black border-warning text-light h-100 p-3">-->
+<!--                    <h6 class="text-warning">Factions</h6>-->
+<!--                    <p class="text-secondary small">Guilds, cults, nations</p>-->
+<!--                    <a href="shared/factions.html" class="text-warning">View →</a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+            <div class="col-md-3">
+                <div class="card bg-black border-warning text-light h-100 p-3">
+                    <h6 class="text-warning">House Rules</h6>
+                    <p class="text-secondary small">Custom mechanics</p>
+                    <a href="shared/house-rules.html" class="text-warning">View →</a>
+                </div>
             </div>
+
+<!--            <div class="col-md-3">-->
+<!--                <div class="card bg-black border-warning text-light h-100 p-3">-->
+<!--                    <h6 class="text-warning">Timeline</h6>-->
+<!--                    <p class="text-secondary small">Cross-campaign events</p>-->
+<!--                    <a href="shared/timeline.html" class="text-warning">View →</a>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
-    </section>
 
-    <section style="margin-top: 3rem;">
-        <h2 class="section-title">Completed Campaigns</h2>
-        <div class="campaign-grid">
-            <div class="campaign-card">
-                <h3>Curse of Blackspire</h3>
-                <div class="campaign-meta">Level 1–10 • Completed</div>
-                <p>
-                    A gothic horror tale of curses, betrayal, and the price of forbidden magic.
-                </p>
-                <a href="campaigns/blackspire/index.html">View Archive →</a>
-            </div>
-        </div>
-    </section>
+    </div>
+</div>
 
-    <section style="margin-top: 3rem;">
-        <h2 class="section-title">Quick Wiki Links</h2>
-        <div class="quick-links">
-            <a class="quick-link" href="shared/world-lore.html">
-                World Lore
-                <span>Gods, planes, history</span>
-            </a>
-            <a class="quick-link" href="shared/factions.html">
-                Factions
-                <span>Guilds, cults, nations</span>
-            </a>
-            <a class="quick-link" href="shared/house-rules.html">
-                House Rules
-                <span>Custom mechanics</span>
-            </a>
-            <a class="quick-link" href="shared/timeline.html">
-                Timeline
-                <span>Cross-campaign events</span>
-            </a>
-        </div>
-    </section>
-</main>
-
-<footer>
-    © Your Table • Built for legends, dice, and chaos
-</footer>
-
+<script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    fetch('/nav.html').then(res => res.text()).then(html => {
+        document.getElementById('navbar').innerHTML = html;
+    });
+</script>
 </body>
 </html>

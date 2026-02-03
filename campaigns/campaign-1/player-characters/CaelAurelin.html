@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cael Aurelin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+</head>
+
+<body class="bg-dark text-light">
+
+<div class="d-flex min-vh-100">
+
+    <div id="navbar"></div>
+    <div class="container py-5 flex-grow-1 p-4">
+        <div class="container-fluid text-light">
+            <!-- Character Header -->
+            <div class="row mb-4">
+                <div class="col-md-3 text-center">
+                    <img src="/assets/img/110-1102775_download-empty-profile-hd-png-download.png" class="img-fluid rounded shadow border border-secondary mb-2" alt="">
+                    <span class="badge bg-warning text-dark mt-2">Cael Aurelin</span>
+                </div>
+
+                <div class="col-md-9">
+                    <h1 class="text-warning">Cael Aurelin</h1>
+                    <p class="text-secondary fst-italic">Aasimar • Celestial Warlock • 4 • Neutral Good</p>
+
+                    <p class="mt-3 text-light">
+                        A brief lore summary describing who this character is, their reputation,
+                        personality, and mythic presence in the world.
+                    </p>
+
+                    <div class="mt-3 d-flex flex-wrap gap-2">
+                        <span class="badge bg-dark border border-secondary text-light">Brave</span>
+                        <span class="badge bg-dark border border-secondary text-light">Haunted</span>
+                        <span class="badge bg-dark border border-secondary text-light">Honorable</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Grid -->
+            <div class="row g-3">
+
+                <!-- Core Stats -->
+                <div class="col-lg-4">
+                    <div class="card bg-black border-warning text-light h-100">
+                        <div class="card-header text-warning">Core Details</div>
+                        <div class="card-body small">
+                            <p><strong>Class:</strong> Celestial Warlock</p>
+                            <p><strong>Level:</strong> 4</p>
+                            <p><strong>Race:</strong> Aasimar</p>
+<!--                            <p><strong>Background:</strong> Soldier</p>-->
+                            <p><strong>Alignment:</strong> Neutral Good</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backstory -->
+                <div class="col-lg-8">
+                    <div class="card bg-black border-warning text-light h-100">
+                        <div class="card-header text-warning">Backstory & Origins</div>
+                        <div class="card-body">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur dicta ducimus ea, earum incidunt natus nesciunt nisi nostrum odio quae quam recusandae sequi, sit suscipit tempore ut vero voluptate.
+                            </p>
+                            <p class="text-body-secondary">
+                                Rumors claim their fate is tied to forces older than the current age,
+                                marking them as a figure of growing legend.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personality -->
+                <div class="col-lg-6">
+                    <div class="card bg-black border-warning text-light h-100">
+                        <div class="card-header text-warning">Personality & Beliefs</div>
+                        <div class="card-body">
+                            <ul class="small">
+                                <li>Values loyalty above personal safety</li>
+                                <li>Struggles with guilt from a past failure</li>
+                                <li>Slow to trust, but fiercely protective once bonded</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Abilities -->
+                <div class="col-lg-6">
+                    <div class="card bg-black border-warning text-light h-100">
+                        <div class="card-header text-warning">Notable Abilities</div>
+                        <div class="card-body small">
+                            <p><strong>Signature Skill:</strong> Master Swordsman</p>
+                            <p><strong>Special Traits:</strong> Tactical Mind, Iron Will</p>
+                            <p><strong>Magic / Powers:</strong> None (yet)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Equipment -->
+                <div class="col-lg-6">
+                    <div class="card bg-black border-warning text-light h-100">
+                        <div class="card-header text-warning">Equipment & Relics</div>
+                        <div class="card-body small">
+                            <ul>
+                                <li>Longsword of the Fallen Legion</li>
+                                <li>Weathered Shield</li>
+                                <li>Insignia of a Lost Order</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Relationships -->
+                <div class="col-lg-6">
+                    <div class="card bg-black border-warning text-light h-100">
+                        <div class="card-header text-warning">Relationships & Reputation</div>
+                        <div class="card-body small">
+                            <p><strong>Allies:</strong> The Silver Company</p>
+                            <p><strong>Enemies:</strong> Crimson Pact</p>
+                            <p><strong>Public Reputation:</strong> Respected Veteran</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    fetch('/nav.html').then(res => res.text()).then(html => {
+        document.getElementById('navbar').innerHTML = html;
+    });
+</script>
+</body>
+</html>
