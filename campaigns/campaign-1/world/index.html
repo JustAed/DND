@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="./../../../">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+</head>
+
+<body class="bg-dark text-light">
+
+<div class="d-flex min-vh-100">
+
+    <div id="navbar"></div>
+    <div class="container py-5 flex-grow-1 p-4">
+
+        <h1>Campaign 1 - World</h1>
+        <p>Placeholder content — add your campaign lore here.</p>
+
+    </div>
+</div>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    fetch('nav.html').then(res => res.text()).then(html => {
+        document.getElementById('navbar').innerHTML = html;
+    });
+</script>
+</body>
+</html>
